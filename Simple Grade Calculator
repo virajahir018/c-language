@@ -1,0 +1,53 @@
+#include<stdio.h>
+
+int main () {
+
+    int num;
+
+    printf("Enter The Mark :");
+
+    scanf("%d", &num);
+
+    (num >= 90 && num <= 100)? printf("Your Grade is A : "):
+    (num >= 80 && num < 90)? printf("Your Grade is B : "):
+    (num >= 70 && num < 80)? printf("Your Grade is C : "):
+    (num >= 60 && num < 70)? printf("Your Grade is D : "):
+    (num < 60)? printf("Your Grade is f : "):
+    printf("Not Possible");
+
+
+    if (num >= 90 && num <= 100)
+    {
+        printf("Excellent work!");
+    }
+    else if (num >= 80 && num < 90)
+    {
+        printf("Well done");
+    }
+    else if (num >= 70 && num < 80)
+    {
+        printf("Good job");
+    }
+    else if (num >= 60 && num < 70)
+    {
+        printf("You Passed, but you could do better");
+    }
+    else if (num < 60){
+        printf("Sorry, you failed");
+    }
+    else {
+        printf("");
+    }
+
+
+    if (num >= 60){
+        printf(" Congratulations! You are eligible for the next level");
+    }
+    else if(num < 60) {
+        printf(" Please try again next time");
+    }
+
+
+    return 0;
+
+}
